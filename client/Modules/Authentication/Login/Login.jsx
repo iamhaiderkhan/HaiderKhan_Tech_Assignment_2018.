@@ -55,7 +55,7 @@ class Login extends Component {
                 <FormGroup>
                   <Label className="white" for="examplePassword">PASSWORD</Label>
                   <Input type="password" value={this.state.password} onChange={this.handleChange} name="password" id="examplePassword" placeholder="Password " />
-                  <Link to="/forget-password"><Label className="white forgot-password fr" for="forgotpassword">Forgot Password?</Label></Link>
+    
                 </FormGroup>
 
                 <Button className="mt-5" color="primary" type="submit" value="Submit" block>LOGIN</Button>
