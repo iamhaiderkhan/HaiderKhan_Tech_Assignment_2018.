@@ -1,0 +1,25 @@
+.login-component {
+  // background-image: url("/images/Background.png");
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  .login-form-section {
+    position: relative;
+    // background: linear-gradient(180deg, #40DA91 0%, #36CA84 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .forgot-password {
+    cursor: pointer;
+  }
+  .ilm-logo-section {
+    position: absolute;
+    right: 40px;
+    .icon-Logo {
+      font-size: 80px;
+    }
+  }
+}

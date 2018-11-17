@@ -1,0 +1,66 @@
+.sidebar {
+  background-color: #181C35;
+  height: 100vh;
+  .list-group-item {
+    background-color: transparent;
+    border-radius: 0px;
+    font-size: 14px;
+    height: 43px;
+    color: #A6A6A6;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #40DA91;
+      color: white;
+      border-radius: 0px;
+      border: none;
+      @each $name in 'review' 'tasks' 'team' {
+        .icon-#{$name} {
+          &:before {
+            color: white !important;
+          }
+        }
+      }
+    }
+    &:active {
+      background-color: #40DA91;
+      color: white;
+      border-radius: 0px;
+      border: none
+    }
+  }
+  .sidebar-logo-section {
+    text-align: center;
+    padding: 40px;
+    .icon-logo {
+      font-size: 70px;
+    }
+  }
+  .sidebar-list {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      &:active {
+        background-color: #40DA91;
+        color: white;
+        border-radius: 0px;
+        border: none;
+      }
+      .list-group-item {
+        &:active {
+          background-color: #40DA91;
+          color: white;
+          border-radius: 0px;
+          border: none;
+        }
+        &:hover {
+          background-color: #40DA91;
+          color: white;
+          border-radius: 0px;
+          border: none;
+        }
+      }
+    }
+  }
+}
